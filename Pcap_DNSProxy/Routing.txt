@@ -1,7 +1,7 @@
 [Local Routing]
 ## China mainland routing blocks
 ## Sources: https://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest
-## Last update: 2019-11-27
+## Last update: 2019-11-28
 
 ## IPv4
 1.0.1.0/24
@@ -7101,7 +7101,10 @@
 2405:8780::/32
 2405:8880::/32
 2405:8980::/32
+2405:8a40::/32
 2405:8a80::/32
+2405:8ac0::/32
+2405:8b40::/32
 2405:8b80::/32
 2405:8c80::/32
 2405:8d80::/32
