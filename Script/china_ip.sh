@@ -22,8 +22,8 @@ downloadOriginIPList() {
 	wget -e "https_proxy=http://127.0.0.1:8118" -O ipip https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt >$TEMP_FILE_PATH'ipip.log' 2>&1
 
 	while ((1)); do
-		apnicIsDownDone=$(cat apnic.log | grep -E "saved|已保存" | wc -l)
-		ipipIsDownDone=$(cat ipip.log | grep -E "saved|已保存" | wc -l)
+		apnicIsDownDone=$(cat $TEMP_FILE_PATH'apnic.log' | grep -E "saved|已保存" | wc -l)
+		ipipIsDownDone=$(cat $TEMP_FILE_PATH'ipip.log' | grep -E "saved|已保存" | wc -l)
 		if [ $apnicIsDownDone == 1 ] && [ $ipipIsDownDone == 1 ]; then
 			echo -e "ip files download done."
 			break
